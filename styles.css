@@ -1,0 +1,95 @@
+/* Overall body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9ecef; /* Light gray background */
+    background-image: linear-gradient(to right, #1c0f4d, #499cba); /* Gradient background */
+}
+
+/* Container for the form */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background for the form */
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+/* Header styling */
+h1 {
+    text-align: center;
+    color: #333; /* Dark gray */
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label styling */
+label {
+    margin-bottom: 5px;
+    color: #555; /* Medium gray for labels */
+}
+
+/* Input and select styling */
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 12px; /* Increased padding for comfort */
+    margin-bottom: 15px; /* Increased margin for spacing */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Increased font size */
+}
+
+/* Select styling */
+select {
+    background-color: #ffffff; /* White background for select */
+    color: #333; /* Dark text */
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    background-color: #3b20bf; /* Coral color */
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+    font-size: 18px; /* Increased font size for visibility */
+}
+
+input[type="submit"]:hover {
+    background-color: #2e1995; /* Darker coral on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Styling for options in select dropdown */
+option {
+    padding: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    select {
+        font-size: 14px; /* Smaller font on smaller screens */
+    }
+
+    input[type="submit"] {
+        font-size: 16px; /* Adjusted font size */
+    }
+}

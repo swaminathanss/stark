@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery Order</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Optional: Add styles if needed -->
+</head>
+<body>
+    <div class="container">
+        <h1>Food Delivery Order Form</h1>
+        <form action="order.php" method="post">
+            <label for="customer_name">Name:</label>
+            <input type="text" id="customer_name" name="customer_name" required>
+
+            <label for="pizza_type">Pizza Type:</label>
+            <select id="pizza_type" name="pizza_type" required>
+                <option value="" disabled selected>Select your pizza type</option>
+                <option value="BBQ Chicken">BBQ Chicken</option>
+                <option value="Veggie Delight">Veggie Delight</option>
+                <option value="Pepperoni">Pepperoni</option>
+                <option value="Margherita">Margherita</option>
+                <option value="Peri Peri Chicken">Peri Peri Chicken</option>
+            </select>
+
+            <label for="pizza_size">Pizza Size:</label>
+            <select id="pizza_size" name="pizza_size" required>
+                <option value="" disabled selected>Select your pizza size</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+
+            <input type="submit" value="Order">
+        </form>
+    </div>
+</body>
+</html>
